@@ -10,7 +10,7 @@ public interface ViewsRepository {
 import culturemedia.model.View;
 
 public interface ViewsRepository {
-    View add(View view);
+    View save(View view);
 }
 main
 
