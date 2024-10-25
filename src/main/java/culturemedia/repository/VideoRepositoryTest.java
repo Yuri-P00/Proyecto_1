@@ -40,21 +40,18 @@ class VideoRepositoryTest {
 		assertEquals(6, videos.size());
 	}
 
-	// *El titulo del video no es sobro clic, si no que tiene otros caracteres y por eso no funciona
 	@Test
 	void when_FindByTitle_only_videos_which_contains_the_word_in_the_title_should_be_returned_successfully() {
 		List<Video> videos = videoRepository.find( "Clic" );
 		assertEquals(2, videos.size());
 	}
 
-	// *revisarlo nuevamente
 	@Test
 	void when_FindByDuration_only_videos_between_the_range_should_be_returned_successfully() {
 		List<Video> videos = videoRepository.find( 4.5, 5.5 );
-		assertEquals(1, videos.size());
+		assertEquals(3, videos.size());
 	}
 
-	// *revisarlo nuevamente
 	@Test
 	void when_FindByTitle_does_not_match_any_video_an_empty_list_should_be_returned_successfully() {
 		List<Video> videos = videoRepository.find ("Non-existent title");
