@@ -2,11 +2,10 @@ package culturemedia.test;
 
 import culturemedia.exception.VideoNotFoundException;
 import culturemedia.model.Video;
-import culturemedia.repository.CultureMediaService;
+import culturemedia.service.CultureMediaService;
 import culturemedia.repository.impl.VideoRepositoryImpl;
 import culturemedia.repository.impl.ViewsRepositoryImpl;
-import culturemedia.service.CultureMediaServiceImpl;
-import org.junit.jupiter.api.Assertions;
+import culturemedia.service.impl.CultureMediaServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
