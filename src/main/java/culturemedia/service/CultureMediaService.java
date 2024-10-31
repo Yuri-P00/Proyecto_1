@@ -1,4 +1,4 @@
-package culturemedia.repository;
+package culturemedia.service;
 
 import culturemedia.exception.VideoNotFoundException;
 import culturemedia.model.Video;
